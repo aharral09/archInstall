@@ -21,4 +21,4 @@ Install Script for Arch Linux in UEFI Mode
 6. Under Storage:
     * Click Disk with the plus icon next to *Controllor: SATA*
 7. Click Ok
-8. You can now start the virtual machine and follow the commands in *install.sh* to install arch linux.
+8. You can now start the virtual machine and follow the commands in install_files/install.sh to install arch linux.
