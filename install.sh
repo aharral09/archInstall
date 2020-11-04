@@ -1,4 +1,8 @@
 #!/bin/bash
+# Choose Arch Linux x86_64 in the boot menu
+# Follow these commands to setup the OS
+# This commands do not include the installation of a window manager/desktop environment/ or any other additional software
+
 timedatectl set-ntp true
 timedatectl status
 fdisk -l
@@ -50,7 +54,7 @@ pacman -S grub
 pacman -S  efibootmgr dosfstools os-prober mtools (if doing UEFI)
 mkdir /boot/EFI (if doing UEFI)
 mount /dev/sda1 /boot/EFI  #Mount FAT32 EFI partition (if doing UEFI)
-grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck (if doing UEFI)
+grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck #(if doing UEFI)
 grub-mkconfig -o /boot/grub/grub.cfg
 
 #Networking:
